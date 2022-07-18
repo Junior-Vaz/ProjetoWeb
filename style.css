@@ -17,12 +17,12 @@ header{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-top: 50px;
+    padding-top: 20px;
     box-shadow: 1px 1px 20px black;
 }
 header:hover{
     border-bottom: 1px solid #f3c309;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     transition: 1s;
     background-image: linear-gradient(to left,#020024,#0b4400);
     
