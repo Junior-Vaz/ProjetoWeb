@@ -17,7 +17,7 @@ header{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-top: 21px;
     box-shadow: 1px 1px 20px black;
 }
 header:hover{
