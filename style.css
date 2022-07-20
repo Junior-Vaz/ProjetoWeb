@@ -11,19 +11,24 @@
 body{
     background-color: #0A3603;
 }
-header{
+header{ 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 21px;
-    box-shadow: 1px 1px 20px black;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.493);
+}
+header{
+    position: sticky;
+    top: -15px;
+    background-image: linear-gradient(to left,#020024,#0b4400);
 }
 header:hover{
     border-bottom: 1px solid #f3c309;
-    padding-bottom: 10px;
-    transition: 1s;
+    padding-top: 30px;
+    transition: 0.4s;
     background-image: linear-gradient(to left,#020024,#0b4400);
     
 }
@@ -35,27 +40,28 @@ header:hover{
 .menu{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 30px;
-    max-width: 80%;
 }
 .menu01{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    max-width: 80%;
+    gap: 0px;
 }
 .links{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: white;
-    padding-bottom: 15px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+    border: 5px 10px 5px 10px;
 }
 .links:hover{
-    border-bottom: 0.5px solid #f3c309;
-    transition: 1s;
-    transition-delay: 0.2s;
+    border: 0.5px solid #f3c309;
+    transition: 0.4s;
     color: #f3c309;
 }
 .login{
@@ -64,6 +70,11 @@ header:hover{
     border-radius: 15px;
     padding: 5px 20px 5px 20px;
     font-weight: 600;
+    
+}
+.login:hover{
+    background-image: linear-gradient(to right,#b1e200,#e9d418);
+    transition: 4s;
 }
 .conteudo{
     display: flex;
@@ -73,9 +84,14 @@ header:hover{
     gap: 10px;
     flex-wrap: wrap;
     padding-top: 50px;
+    padding-bottom: 20px;
+}
+.conteudo:hover{
+    background-image: linear-gradient(to right,#0200314f,#0b4400);
+    
 }
 .inscrevase{
-    max-width: 80%;    
+    max-width: 85%;    
 }
 .h1-insc{
     font-size: 5em;
@@ -113,6 +129,78 @@ header:hover{
     font-size: 1.9em;   
 }
 .img-cont{
-    max-width: 90vw;
-    max-height: 90vh;
+    width: 100%;
+}
+
+.conteudo-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: white;
+    padding-top: 50px;
+}
+.historia{
+    width: 500px;
+    height: 500px;
+    padding: 15px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.493);
+    padding-bottom: 40px;
+}
+.historia > h1,p{
+    padding-bottom: 20px;
+}
+.historia >h1{
+    color: #e9d418;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.0em;
+}
+.historia >p{
+    text-indent: 30px;
+}
+.historia >button{
+    padding: 10px 25px 10px 25px;
+    margin-top: 7px;
+    border-style: none;
+    background-color: #e9d41880;
+}
+.historia > button > a{
+    text-decoration: none;
+    color: #0A3603;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+.regioes{
+    width: 500px;
+    height: 500px;
+    padding: 15px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.493);
+    padding-bottom: 40px;
+}
+.regioes >h1,p{
+    padding-bottom: 20px;
+}
+.regioes > p{
+    padding-top: 20px;
+}
+.regioes >h1{
+    color: #e9d418;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.0em;
+}
+.regioes >button{
+    padding: 10px 25px 10px 25px;
+    margin-top: 7px;
+    border-style: none;
+    background-color: #e9d41880;
+
+}
+.regioes > button > a{
+    text-decoration: none;
+    color: #0A3603;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
 }
