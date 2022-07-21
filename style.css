@@ -67,6 +67,7 @@ header:hover{
     color: #f3c309;
 }
 .login{
+    display: none;
     background-color: #f3c309;
     color: #0A3603;
     border-radius: 15px;
@@ -135,6 +136,9 @@ header:hover{
 .img-cont{
     width: 100%;
 }
+.img-conteudo{
+    max-width: 90vw;
+}
 
 /*Conteudo Secundário*/
 .conteudo-sec{
@@ -150,7 +154,6 @@ header:hover{
     width: 500px;
     height: 500px;
     padding: 15px;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.493);
     padding-bottom: 40px;
 }
 .historia > h1,p{
@@ -181,10 +184,10 @@ header:hover{
     font-size: 1.2em;
 }
 .regioes{
+    width: 90vw;
     width: 500px;
     height: 500px;
     padding: 15px;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.493);
     padding-bottom: 40px;
 }
 .regioes >h1,p{
@@ -216,12 +219,128 @@ header:hover{
     width: 95%;
 }
 
+/*Slides de fotos*/
+.h1gal{
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.slide-fotos{
+    overflow: hidden;
+    max-height: 70%;
+    width: 98.8vw;
+    padding: 0px;
+    position: relative;
+    height: 465px;
+    box-shadow: 1px 1px 15px black inset;
+    background-image: linear-gradient(to bottom,#000000,#041400);
+}
+.content{
+    height: 500px;
+    width: 800px;
+    max-width: 96vw;
+    border-radius: 2px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.slide-fotos:hover{
+    padding-bottom: 200px;
+    transition: 1s;
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.barra{
+    box-shadow: 1px 1px 14px black;
+    width: 30px;
+    height: 10px;
+    border: 0px solid rgb(255, 255, 255);
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;                                                                        
+}
+.barra:hover{
+    background-color: rgb(199, 192, 5);
+    transition: .5s;
+}
+.input{
+    display: none;
+}
+.slides{
+    display: flex;
+    flex-direction: row;
+    width: 1399%;
+    height: 100%;
+}
+.slide{
+    width: 7%;
+    transition: .5s;
+}
+.slide img{
+    width: 100%;                
+    height: 100%;
+}
+/*Passando slides*/
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -7%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -14%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -21%;
+}
+#slide5:checked ~ .s1{
+    margin-left: -28%;
+}
+#slide6:checked ~ .s1{
+    margin-left: -35%;
+}
+#slide7:checked ~ .s1{
+    margin-left: -42%;
+}
+#slide8:checked ~ .s1{
+    margin-left: -49%;
+}
+#slide9:checked ~ .s1{
+    margin-left: -56%;
+}
+#slide10:checked ~ .s1{
+    margin-left: -63%;
+}
+#slide11:checked ~ .s1{
+    margin-left: -70%;
+}
+#slide12:checked ~ .s1{
+    margin-left: -77%;
+}
+#slide13:checked ~ .s1{
+    margin-left: -84%;
+}
+#slide14:checked ~ .s1{
+    margin-left: -91%;
+}
 /*Rodapé*/
 footer{
     text-align: center;
     background-image: linear-gradient(to left,#020024,#0b4400);
     color: white;
-    margin-top: 20px;
 }
 footer >p{
     padding-top: 5px;

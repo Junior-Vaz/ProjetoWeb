@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to left,rgb(0, 43, 0),rgb(5, 65, 0)
+    );
+}
+/*configurações do content*/
+.content{
+    height: 400px;
+    width: 600px;
+    border-radius: 15px;
+    overflow: hidden; /*Propriedade para esconder elementos dentro da content*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*Configurações do botão navegações*/
+.navigation{
+    position: absolute; /*os botões de navegação ira soprepor sobre o slide podendo organizar seu lugar*/
+    bottom: 20px; /*Posicionando navegador*/
+    left: 50%; /*Posicionando navegador*/
+    transform: translate(-50%,-50%); /*Posicionando navegador*/
+    display: flex;
+}
+.barra{
+    width: 60px;
+    height: 16px;
+    border: 1px solid white;
+    margin-left: 10px;
+    border-radius: 15px;
+    cursor: pointer; /*Cursor ira mudar*/
+}
+.barra:hover{
+    background-color: white;
+    transition: .5s;
+}
+/*Escondendo input/radio, não presisa ficar a mostra*/
+input{
+    display: none;
+}
+/*Configurações das slides*/
+.slides{
+    display: flex;
+    flex-direction: row;
+    width: 500%; /*width na horizontal para slides ocupar content na hora de passar o proximo slide*/
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+.slide img{ /*configurações do tamanho dass iamgens do slide*/
+    width: 100%;
+    height: 100%;
+}
+/*Configurações das passagem dos slides*/
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1{ 
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}                               
+#slide5:checked ~ .s1{
+    margin-left: -80%; 
+}            
